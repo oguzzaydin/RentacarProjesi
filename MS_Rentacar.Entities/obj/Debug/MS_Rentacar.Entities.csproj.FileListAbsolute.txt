@@ -1,0 +1,5 @@
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.Entities\bin\Debug\MS_Rentacar.Entities.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.Entities\bin\Debug\MS_Rentacar.Entities.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.Entities\obj\Debug\MS_Rentacar.Entities.csprojResolveAssemblyReference.cache
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.Entities\obj\Debug\MS_Rentacar.Entities.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.Entities\obj\Debug\MS_Rentacar.Entities.pdb

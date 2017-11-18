@@ -1,0 +1,132 @@
+﻿@model MS_Rentacar.Web.Models.UrunlerViewModel
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 class="page-title">
+    Admin Paneli &amp; Ürün Özellikleri Düzenleme .
+    <small>MS &amp; Rent A Car</small>
+</h3>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-red-sunglo">
+                    <i class="icon-settings font-red-sunglo"></i>
+                    <span class="caption-subject bold uppercase">Ürün Bilgileri Düzenleme</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group">
+                        <a class="btn btn-sm green dropdown-toggle" href="javascript:;" data-toggle="dropdown">
+                            Actions
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-pencil"></i> Edit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-trash-o"></i> Delete
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-ban"></i> Ban
+                                </a>
+                            </li>
+                            <li class="divider"> </li>
+                            <li>
+                                <a href="javascript:;"> Make admin </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet-body form">
+               @using (Html.BeginForm("Edit", "Post", FormMethod.Post,new { @enctype="multipart/form-data"}))
+               {
+
+                   @Html.ValidationSummary(false)
+                
+                <div class="form-body">
+                    <div class="form-group">@Html.Hidden("model.Urun.Id", Model.Urun.Id)</div>
+                    <div class="form-group">
+                        <label>Marka</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-barcode"></i>
+                            </span>
+                            @Html.TextBox("model.Urun.Marka",Model.Urun.Marka,new { @class = "form-control"} )
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Model</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-barcode"></i>
+                            </span>
+                            @Html.TextBox("model.Urun.Model", Model.Urun.Model, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile1">Resim</label>
+                        <input type="file" class="form-control" id="Resimler" name="model.Resim_Upload" multiple>
+                        <p class="help-block">Ürün İçin Eklenecek Resimleri Seçin</p>
+                        <button class="btn btn-info pull-right" id="btn_clear_images">Seçilen Resimleri Temizle</button>
+                       
+                    </div>
+               
+                    <div class="form-group">
+                        <label for="exampleInputFile1"></label>
+
+                        <p class="help-block"></p>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Açıklama</label>
+                        @Html.TextArea("model.Urun.Aciklama", Model.Urun.Aciklama,new { @class = "ckeditor form-control", @id="editor1"} )
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="exampleInputFile1">Ürüne Ait Resimler</label>
+                        <div class="mt-element-card mt-element-overlay">
+                            <div class="row">
+                                @for (int i = 0; i < Model.Urun.Images.Count; i++)
+                                {
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="mt-card-item">
+                                            <div class="mt-card-avatar mt-overlay-1">
+                                                <img class="img-thumbnail" src="~/Images/@Model.Urun.Images[i].ImageUrl" />
+                                            </div>
+                                            <div class="mt-card-content">
+                                                <div class="mt-card-social">
+                                                    <ul>
+                                                        <li>
+                                                            @Html.CheckBox($"model._ischeck[{i}]") Sil
+                                                        </li>
+                                                        @Html.Hidden($"model._checkvalue[{i}]", Model.Urun.Images[i].Id)
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <button type="submit" class="btn blue pull-right">Kaydet</button>
+                    </div>
+                </div>
+               }
+             
+            </div>
+        </div>
+    </div>
+</div>

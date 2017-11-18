@@ -1,0 +1,16 @@
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.DataAccessLayer.dll.config
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.DataAccessLayer.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.DataAccessLayer.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\EntityFramework.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.Common.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.Core.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.Entities.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.Common.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.Core.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\MS_Rentacar.Entities.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\EntityFramework.xml
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\obj\Debug\MS_Rentacar.DataAccessLayer.csprojResolveAssemblyReference.cache
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\obj\Debug\MS_Rentacar.DataAccessLayer.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.DataAccessLayer\obj\Debug\MS_Rentacar.DataAccessLayer.pdb

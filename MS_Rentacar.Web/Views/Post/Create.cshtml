@@ -1,0 +1,95 @@
+﻿@model MS_Rentacar.Entities.EntityFramework.Urunler
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 class="page-title">
+    Admin Paneli &amp; Yeni Ürün .
+    <small>MS &amp; Rent A Car</small>
+</h3>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-red-sunglo">
+                    <i class="icon-settings font-red-sunglo"></i>
+                    <span class="caption-subject bold uppercase">Ürün Bilgileri Düzenleme</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group">
+                        <a class="btn btn-sm green dropdown-toggle" href="javascript:;" data-toggle="dropdown">
+                            Actions
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-pencil"></i> Edit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-trash-o"></i> Delete
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-ban"></i> Ban
+                                </a>
+                            </li>
+                            <li class="divider"> </li>
+                            <li>
+                                <a href="javascript:;"> Make admin </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                @using (Html.BeginForm("Create", "Post", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                {
+                   
+                  
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label>Marka</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-barcode"></i>
+                                </span>
+                                @Html.Editor("model.Marka", new  {htmlAttributes= new { @class = "form-control" } })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Model</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-barcode"></i>
+                                </span>
+                                @Html.Editor("model.Model", new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Textarea</label>
+                            <textarea class="form-control" name="model.Aciklama" id="" rows="3"></textarea>
+                        </div>  
+                        <div class="form-group">
+                            <label for="exampleInputFile1">Resim Seç</label>
+                            <input type="file" id="exampleInputFile1" name="Resimler" multiple>
+                            <p class="help-block">Ürün İçin Eklenecek Resimleri Seçin</p>
+                            <button class="btn btn-info" id="btn_clear_images">Seçilen Resimleri Temizle</button>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn blue">Kaydet</button>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.BusinessLayer.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.BusinessLayer.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.Core.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.DataAccessLayer.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\EntityFramework.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.Core.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.DataAccessLayer.pdb
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\EntityFramework.xml
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\obj\Debug\MS_Rentacar.BusinessLayer.csprojResolveAssemblyReference.cache
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\obj\Debug\MS_Rentacar.BusinessLayer.dll
+c:\users\faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\obj\Debug\MS_Rentacar.BusinessLayer.pdb
+C:\Users\Faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.Entities.dll
+C:\Users\Faruk\documents\visual studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.Entities.pdb
+C:\Users\Faruk\Documents\Visual Studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\MS_Rentacar.BusinessLayer.dll.config
+C:\Users\Faruk\Documents\Visual Studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Faruk\Documents\Visual Studio 2015\Projects\Ms_Rent_a_Car\MS_Rentacar.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml

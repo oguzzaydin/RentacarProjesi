@@ -1,0 +1,89 @@
+﻿@model List<MS_Rentacar.Entities.EntityFramework.Slider>
+@{
+    ViewBag.Title = "Slider";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 class="page-title">
+    Slayt Gösterisi
+    <small>MS Rent A Car</small>
+</h3>
+@if (TempData["isEdited"] != null)
+{
+    if ((bool)TempData["isEdited"])
+    {
+        <div class="row">
+            <div class="alert alert-block alert-success fade in">
+                <button type="button" class="close" data-dismiss="alert"></button>
+                <h4 class="alert-heading">İşlem Barşarılı!</h4>
+                <p>Bilgiler Güncellendi/Eklendi.</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-block alert-danger fade in">
+            <button type="button" class="close" data-dismiss="alert"></button>
+            <h4 class="alert-heading">Hata!</h4>
+            <p>Bilgiler Güncellenemedi/Eklenemedi ! </p>
+            <p>
+
+            </p>
+        </div>
+    }
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class=" icon-layers font-green"></i>
+                    <span class="caption-subject font-green bold uppercase">Slayt İçeriği Düzenleme</span>
+                    <a href="~/">Yeni Resimler Ekle</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+               
+                <div class="mt-element-card mt-element-overlay">
+                    <div class="row">
+                        @using (Html.BeginForm("Slider", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                        {
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="mt-card-item">
+                                         <div class="mt-card-avatar mt-overlay-1">
+                                            <img src="~/Content/plus.png">
+                                        </div>
+                                        <div class="mt-card-content">
+                                            <h3 class="mt-card-name">Yeni Resimler Ekle</h3>
+                                            <input type="file" name="Resimler" multiple />
+                                        </div>
+                                    </div>
+                                </div>                    
+                            for (int i = 0; i < Model.Count; i++)
+                            {
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="mt-card-item">
+                                    <div class="mt-card-avatar mt-overlay-1">
+                                        <img src="~/Images/@Model[i].ImageUrl">
+                                        
+                                    </div>
+                                    <div class="mt-card-content">
+                                        <h3 class="mt-card-name">@Model[i].Baslik</h3>
+                                        <p class="mt-card-desc font-grey-mint">@Model[i].Metin</p>
+                                        @Html.CheckBox($"checkitem[{i}]", false)
+                                        @Html.Hidden($"checkvalue[{i}]", Model[i].Id)
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        }
+
+                     </div>
+                        
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>

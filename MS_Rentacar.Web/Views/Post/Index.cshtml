@@ -1,0 +1,91 @@
+﻿@model List<MS_Rentacar.Entities.EntityFramework.Urunler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+ 
+}
+<h3 class="page-title">
+    Admin Paneli &amp; &&&
+    <small>MS &amp; Rent A Car</small>
+</h3>
+@if (TempData["isEdited"]!=null)
+{
+    if((bool)TempData["isEdited"])
+    {
+<div class="row">
+    <div class="alert alert-block alert-success fade in">
+        <button type="button" class="close" data-dismiss="alert"></button>
+        <h4 class="alert-heading">İşlem Barşarılı!</h4>
+        <p>Ürün Bilgileri Güncellendi/Eklendi.</p>
+    </div>
+</div>
+    }
+    else
+    {
+        <div class="alert alert-block alert-danger fade in">
+            <button type="button" class="close" data-dismiss="alert"></button>
+            <h4 class="alert-heading">Hata!</h4>
+            <p>Ürün Bilgileri Güncellenemedi/Eklenemedi ! </p>
+            <p>
+                @if(TempData["Product"]!=null)
+                { 
+                <a class="btn blue" href="~/Post/Edit/@((TempData["Product"] as MS_Rentacar.Entities.EntityFramework.Urunler).Id)">Tekrar Dene </a>
+                }
+                else
+                {
+                    <a class="btn blue" href="~/Post/Create/">Tekrar Dene </a>
+                }
+            </p>
+        </div>
+    }
+}
+<div class="row">
+    <div class="col-md-12">
+        <!-- BEGIN BORDERED TABLE PORTLET-->
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-settings font-red"></i>
+                    <span class="caption-subject font-red sbold uppercase">Ürünler</span>
+                </div>
+                <div class="actions">
+                        <a href="~/Post/Create" class="btn green btn-circle">Yeni Ürün Ekle</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable table-scrollable-borderless">
+                    <table class="table table-hover table-light">
+                        <thead>
+                            <tr class="uppercase">
+                                <th> # </th>
+                                <th> Marka</th>
+                                <th> Model </th>
+                                <th> Ürün Açıklaması </th>
+                                <th> Fotoğraf Sayısı </th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var item in Model)
+                            { 
+                            <tr>
+                                <td>#</td>
+                                <td>@item.Marka</td>
+                                <td>@item.Model</td>
+                                <td>@item.Aciklama</td>
+                                <td>@item.Images.Count</td>
+                                <td>
+                                    <a href="~/Post/Edit/@item.Id" class="btn blue btn-circle">Düzenle</a>
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- END BORDERED TABLE PORTLET-->
+    </div>
+</div>
+
